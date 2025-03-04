@@ -3,6 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzeLottery.Core", "src\AnalyzeLottery.Core\AnalyzeLottery.Core.csproj", "{2D8F3545-DDC9-4CE1-88A1-E869D009D11C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workers", "Workers", "{DB9BC7E8-43E3-4F6C-BFDA-A043878734AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzeLottery.Application", "src\AnalyzeLottery.Application\AnalyzeLottery.Application.csproj", "{AE1202CE-C4F4-4D84-973F-DEDFEC931721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzeLottery.Worker", "src\AnalyzeLottery.Worker\AnalyzeLottery.Worker.csproj", "{8A68D469-9BC9-4392-BBBC-AAF7D1EAAF19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A88240D-A792-4342-89D3-B747914678C1}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +23,22 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D8F3545-DDC9-4CE1-88A1-E869D009D11C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D8F3545-DDC9-4CE1-88A1-E869D009D11C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D8F3545-DDC9-4CE1-88A1-E869D009D11C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D8F3545-DDC9-4CE1-88A1-E869D009D11C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1202CE-C4F4-4D84-973F-DEDFEC931721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1202CE-C4F4-4D84-973F-DEDFEC931721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1202CE-C4F4-4D84-973F-DEDFEC931721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1202CE-C4F4-4D84-973F-DEDFEC931721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A68D469-9BC9-4392-BBBC-AAF7D1EAAF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A68D469-9BC9-4392-BBBC-AAF7D1EAAF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A68D469-9BC9-4392-BBBC-AAF7D1EAAF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A68D469-9BC9-4392-BBBC-AAF7D1EAAF19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A68D469-9BC9-4392-BBBC-AAF7D1EAAF19} = {DB9BC7E8-43E3-4F6C-BFDA-A043878734AD}
 	EndGlobalSection
 EndGlobal

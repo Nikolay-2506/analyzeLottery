@@ -1,0 +1,6 @@
+﻿services:
+  analyzelottery.worker:
+    image: analyzelottery.worker
+    build:
+      context: .
+      dockerfile: src/AnalyzeLottery.Worker/Dockerfile
